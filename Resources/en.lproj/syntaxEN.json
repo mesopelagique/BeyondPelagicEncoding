@@ -1,0 +1,831 @@
+{
+	"_method_": {},
+	"cs.bpe": {
+		"TokenEstimator": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"Tokenizer": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		}
+	},
+	"TokenEstimator": {
+		"bytesPerToken()": {
+			"Syntax": "**.bytesPerToken**( *kind* : Text ) : Real",
+			"Params": [
+				[
+					"kind",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Real",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"estimate()": {
+			"Syntax": "**.estimate**( *text* : Text; *kind* : Text ) : Integer",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"kind",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get kinds()": {
+			"Syntax": "**.get kinds**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"detectKind()": {
+			"Syntax": "**.detectKind**( *text* : Text ) : Text",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"detail()": {
+			"Syntax": "**.detail**( *text* : Text; *kind* : Text ) : Object",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"kind",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"estimateBatch()": {
+			"Syntax": "**.estimateBatch**( *texts* : Collection; *kind* : Text ) : Object",
+			"Params": [
+				[
+					"texts",
+					"Collection",
+					"->"
+				],
+				[
+					"kind",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"Tokenizer": {
+		"get eot_token()": {
+			"Syntax": "**.get eot_token**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encode_batch()": {
+			"Syntax": "**.encode_batch**( *texts* : Collection; *encoding* : Text; *allowedSpecial* : Variant; *disallowedSpecial* : Variant ) : Collection",
+			"Params": [
+				[
+					"texts",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"allowedSpecial",
+					"Variant",
+					"->"
+				],
+				[
+					"disallowedSpecial",
+					"Variant",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encode_ordinary_batch()": {
+			"Syntax": "**.encode_ordinary_batch**( *texts* : Collection; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"texts",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get isLoaded()": {
+			"Syntax": "**.get isLoaded**() : Boolean",
+			"Params": [
+				[
+					"",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encodeAllSpecial()": {
+			"Syntax": "**.encodeAllSpecial**( *text* : Text; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get nVocab()": {
+			"Syntax": "**.get nVocab**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encodeOrdinary()": {
+			"Syntax": "**.encodeOrdinary**( *text* : Text; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get max_token_value()": {
+			"Syntax": "**.get max_token_value**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get specialTokensSet()": {
+			"Syntax": "**.get specialTokensSet**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encodeAllowedSpecial()": {
+			"Syntax": "**.encodeAllowedSpecial**( *text* : Text; *allowedSpecial* : Collection; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"allowedSpecial",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get special_tokens_set()": {
+			"Syntax": "**.get special_tokens_set**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get eotToken()": {
+			"Syntax": "**.get eotToken**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decode_with_offsets()": {
+			"Syntax": "**.decode_with_offsets**( *tokens* : Collection; *encoding* : Text ) : Object",
+			"Params": [
+				[
+					"tokens",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get encoding()": {
+			"Syntax": "**.get encoding**() : Text",
+			"Params": [
+				[
+					"",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get n_vocab()": {
+			"Syntax": "**.get n_vocab**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decodeSingleTokenBytes()": {
+			"Syntax": "**.decodeSingleTokenBytes**( *token* : Integer; *encoding* : Text ) : Blob",
+			"Params": [
+				[
+					"token",
+					"Integer",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Blob",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decodeTokensBytes()": {
+			"Syntax": "**.decodeTokensBytes**( *tokens* : Collection; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"tokens",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decodeBatch()": {
+			"Syntax": "**.decodeBatch**( *batch* : Collection; *encoding* : Text; *errors* : Text ) : Collection",
+			"Params": [
+				[
+					"batch",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"errors",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encode_allowed_special()": {
+			"Syntax": "**.encode_allowed_special**( *text* : Text; *allowedSpecial* : Collection; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"allowedSpecial",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decode_batch()": {
+			"Syntax": "**.decode_batch**( *batch* : Collection; *encoding* : Text; *errors* : Text ) : Collection",
+			"Params": [
+				[
+					"batch",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"errors",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"count()": {
+			"Syntax": "**.count**( *text* : Text; *encoding* : Text ) : Integer",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decode_single_token_bytes()": {
+			"Syntax": "**.decode_single_token_bytes**( *token* : Integer; *encoding* : Text ) : Blob",
+			"Params": [
+				[
+					"token",
+					"Integer",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Blob",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decodeBytes()": {
+			"Syntax": "**.decodeBytes**( *tokens* : Collection; *encoding* : Text ) : Blob",
+			"Params": [
+				[
+					"tokens",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Blob",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encodeSingleToken()": {
+			"Syntax": "**.encodeSingleToken**( *textOrBytes* : Variant; *encoding* : Text ) : Integer",
+			"Params": [
+				[
+					"textOrBytes",
+					"Variant",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encodeBytes()": {
+			"Syntax": "**.encodeBytes**( *bytes* : Blob; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"bytes",
+					"Blob",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decode_bytes()": {
+			"Syntax": "**.decode_bytes**( *tokens* : Collection; *encoding* : Text ) : Blob",
+			"Params": [
+				[
+					"tokens",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Blob",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encode_single_token()": {
+			"Syntax": "**.encode_single_token**( *textOrBytes* : Variant; *encoding* : Text ) : Integer",
+			"Params": [
+				[
+					"textOrBytes",
+					"Variant",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encode_ordinary()": {
+			"Syntax": "**.encode_ordinary**( *text* : Text; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encodeOrdinaryBatch()": {
+			"Syntax": "**.encodeOrdinaryBatch**( *texts* : Collection; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"texts",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"load()": {
+			"Syntax": "**.load**( *encoding* : Text )",
+			"Params": [
+				[
+					"encoding",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"encode()": {
+			"Syntax": "**.encode**( *text* : Text; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get maxTokenValue()": {
+			"Syntax": "**.get maxTokenValue**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decode()": {
+			"Syntax": "**.decode**( *tokens* : Collection; *encoding* : Text; *errors* : Text ) : Text",
+			"Params": [
+				[
+					"tokens",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"errors",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decodeWithOffsets()": {
+			"Syntax": "**.decodeWithOffsets**( *tokens* : Collection; *encoding* : Text ) : Object",
+			"Params": [
+				[
+					"tokens",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encodeBatch()": {
+			"Syntax": "**.encodeBatch**( *texts* : Collection; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"texts",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"decode_tokens_bytes()": {
+			"Syntax": "**.decode_tokens_bytes**( *tokens* : Collection; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"tokens",
+					"Collection",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"encode_all_special()": {
+			"Syntax": "**.encode_all_special**( *text* : Text; *encoding* : Text ) : Collection",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"encoding",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	}
+}

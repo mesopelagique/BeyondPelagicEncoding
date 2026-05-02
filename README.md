@@ -15,7 +15,7 @@ pure-4D port of [tiktoken][tiktoken] / [js-tiktoken][js-tiktoken] and
 produces byte-identical output to the canonical Python implementation.
 
 [tiktoken]: https://github.com/openai/tiktoken
-[js-tiktoken]: https://github.com/openai/tiktoken/tree/main/js
+[js-tiktoken]: https://github.com/dqbd/tiktoken
 
 ## Layout
 
