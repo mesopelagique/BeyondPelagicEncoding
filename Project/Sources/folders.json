@@ -1,0 +1,9 @@
+{
+	"TESTS": {
+		"methods": [
+			"test_tokenEstimator",
+			"test_tokenizer"
+		]
+	},
+	"trash": {}
+}
